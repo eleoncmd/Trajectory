@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0350826d-05f5-4f6b-b47c-7571d0de8137" name="Changes" comment="Не успела доделать алгоритм нахождения ближайшей точки от текущей точки отсчета">
+    <list default="true" id="0350826d-05f5-4f6b-b47c-7571d0de8137" name="Changes" comment="Доделала алгоритм, теперь все хорошо вывводит.&#10;Следующий этап - алгоритм Дейкстры">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -12,6 +12,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,9 +38,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/Trajectory&quot;
   }
 }</component>
   <component name="RunManager">
@@ -92,11 +101,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716337139353</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Доделала алгоритм, теперь все хорошо вывводит.&#10;Следующий этап - алгоритм Дейкстры">
+      <option name="closed" value="true" />
+      <created>1716933274616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716933274616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Не успела доделать алгоритм нахождения ближайшей точки от текущей точки отсчета" />
-    <option name="LAST_COMMIT_MESSAGE" value="Не успела доделать алгоритм нахождения ближайшей точки от текущей точки отсчета" />
+    <MESSAGE value="Доделала алгоритм, теперь все хорошо вывводит.&#10;Следующий этап - алгоритм Дейкстры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доделала алгоритм, теперь все хорошо вывводит.&#10;Следующий этап - алгоритм Дейкстры" />
   </component>
 </project>
