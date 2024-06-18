@@ -33,9 +33,9 @@ for i in ref_points:
     image_point = cv2.circle(img, i, 0, (255, 0, 50), 2)
 
 """Поиск ближайшей точки до точки A"""
-nearest_p = ref_points[0]  # [97, 97]
-signal = False
-print(len(ref_points))  # 4
+# nearest_p = ref_points[0]  # [97, 97]
+# signal = False
+# print(len(ref_points))  # 4
 for _ in range(ref_points.shape[0] * ref_points.shape[1]):
     min_dist = np.inf
     min_index = -1
@@ -52,7 +52,9 @@ for _ in range(ref_points.shape[0] * ref_points.shape[1]):
                 if ref_points[i][j] != 0 and distance[i][j] > distance[min_index[0]][min_index[1]] + ref_points[i][j]:
                     distance[i][j] = distance[min_index[0]][min_index[1]]+ref_points[i][j]
                     prev[i][j] = min_index
-                # for j in range(-1, len(ref_points) + 1):  # (-1, 3)
+
+
+# for j in range(-1, len(ref_points) + 1):  # (-1, 3)
 #     print('j', j)
 #     if j < 0:  # j= -1
 #         start = A  # start = [10, 10]
