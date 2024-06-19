@@ -36,23 +36,6 @@ for i in ref_points:
 # nearest_p = ref_points[0]  # [97, 97]
 # signal = False
 # print(len(ref_points))  # 4
-for _ in range(ref_points.shape[0] * ref_points.shape[1]):
-    min_dist = np.inf
-    min_index = -1
-    for i in range(ref_points.shape[0]):
-        for j in range(ref_points.shape[1]):
-            if distance[i][j] < min_dist and ref_points[i][j] != 0:
-                min_dist = distance[i][j]
-                min_index = (i, j)
-        if min_index == -1:
-            break
-        distance[min_index[0]][min_index[1]] = np.inf
-        for i in range(ref_points.shape[0]):
-            for j in range(ref_points.shape[1]):
-                if ref_points[i][j] != 0 and distance[i][j] > distance[min_index[0]][min_index[1]] + ref_points[i][j]:
-                    distance[i][j] = distance[min_index[0]][min_index[1]]+ref_points[i][j]
-                    prev[i][j] = min_index
-
 
 # for j in range(-1, len(ref_points) + 1):  # (-1, 3)
 #     print('j', j)
