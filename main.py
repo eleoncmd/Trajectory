@@ -1,14 +1,21 @@
 import cv2
 import numpy as np
 from math import *
+from test import Node, Graph
 
+node = Node
 """Читаем изображение"""
 path = r'BLACKOUT.jpg'
 img = cv2.imread(path)
 cv2.cvtColor(img[..., ::-1], cv2.COLOR_RGB2BGR)
 """Иницализация точки A и B"""
+
 A = np.array([10, 10])
 B = np.array([300, 300])
+node.data = A
+node.index = A.shape
+
+
 cv2.circle(img, A, 0, (0, 255, 255), 3)
 cv2.circle(img, B, 0, (0, 255, 255), 3)
 """Инициализация точек прямоугольника и опорных точек"""
@@ -21,6 +28,7 @@ ref_points = np.array([
     [203, 97], [203, 703],
     [97, 703], [300, 300]
 ])
+graph = Graph(6, 6, ref_points)
 """Инциализация матрицы расстояний"""
 distance = np.full((ref_points.shape[0], ref_points.shape[1]), np.inf)
 print(distance)
